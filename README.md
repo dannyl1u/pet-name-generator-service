@@ -2,8 +2,6 @@
 
 This web app generates funny pet names for all kinds of animals, using the OpenAI API through Natural Language Processing. It makes additional GET requests to another API (node-server), which makes GET requests to another API (french-translator-server) which takes in the AI generated pet name and translates it to a newly invented language, known as French++.
 
-p used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
-
 ## Setup
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/)
