@@ -47,7 +47,7 @@ You should now be able to access the app at [http://localhost:5000](http://local
 
 ## Now we need to setup our backend servers for the app to work:
 
-#Node Server
+Node Server
 https://github.com/dannyl1u/node-server
 
 1. Clone the repo. 
