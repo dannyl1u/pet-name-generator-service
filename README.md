@@ -9,8 +9,10 @@ This web app generates funny pet names for all kinds of animals, making POST req
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/)
 
-2. Clone this repository
-
+2. Clone the user app repository (this repo)
+   ```bash
+   $ git clone https://github.com/dannyl1u/pet-name-generator-service.git
+   ```
 
 3. Create a new virtual environment
 
