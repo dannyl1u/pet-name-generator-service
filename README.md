@@ -3,6 +3,8 @@
 
 This web app generates funny pet names for all kinds of animals, making POST requests to the OpenAI API that generates a pet name using Natural Language Processing. It makes additional GET requests to another API (node-server), which makes GET requests to another API (french-translator-server) which takes in the AI generated pet name and translates it to a newly invented language, known as French++. 
 
+Rubey - a complicated solution to a simple problem. 
+
 <img width="1461" alt="image" src="https://user-images.githubusercontent.com/45186464/219979972-59ef1fd2-7368-43fc-a0c3-92de37b8a5e0.png">
 
 
@@ -78,10 +80,11 @@ Server should now be up at [http://localhost:8080](http://localhost:8080)
 
 # French translater Server
 https://github.com/dannyl1u/french-translator-server
-1. Clone the repository
+1. Clone the repository and navigate to the directory
 
    ```bash
    $ git clone https://github.com/dannyl1u/french-translator-server.git
+   $ cd french-translator-server
    ```
 
 2. Ensure python is installed.
@@ -104,12 +107,6 @@ https://github.com/dannyl1u/french-translator-server
    $ python api.py
    ```
    
-5. Run the server
+ Server should now be up at [http://localhost:8000](http://localhost:8000)
 
-   ```bash
-   $ python api.py
-   ```
-   
-Server should now be up at [http://localhost:8000](http://localhost:8000)
-
-10. All done. Generate your pet name!
+## All done. Head back to the user app at [http://localhost:5000](http://localhost:5000) and generate your pet name!
