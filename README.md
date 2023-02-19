@@ -2,7 +2,7 @@
 
 This web app generates funny pet names for all kinds of animals, making POST requests to the OpenAI API that generates a pet name using Natural Language Processing. It makes additional GET requests to another API (node-server), which makes GET requests to another API (french-translator-server) which takes in the AI generated pet name and translates it to a newly invented language, known as French++. 
 
-## Setup
+## Setup user app
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/)
 
@@ -40,7 +40,7 @@ You should now be able to access the app at [http://localhost:5000](http://local
 
 ## Now we need to setup our backend servers for the app to work:
 
-8. Node Server
+#Node Server
 https://github.com/dannyl1u/node-server
 
 1. Clone the repo. 
@@ -69,7 +69,7 @@ https://github.com/dannyl1u/node-server
 
 Server should now be up at [http://localhost:8080](http://localhost:8080)
 
-9. French translater Server
+# French translater Server
 https://github.com/dannyl1u/french-translator-server
 1. Ensure python is installed.
 
