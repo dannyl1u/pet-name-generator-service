@@ -1,4 +1,4 @@
-# Mountain Madness Hackathon 2023 - Rubey on Tails 🐕
+# 💻 Mountain Madness Hackathon 2023 💻 - Rubey on Tails 🐕
 
 This web app generates funny pet names for all kinds of animals, making POST requests to the OpenAI API that generates a pet name using Natural Language Processing. It makes additional GET requests to another API (node-server), which makes GET requests to another API (french-translator-server) which takes in the AI generated pet name and translates it to a newly invented language, known as French++. 
 
