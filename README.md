@@ -38,7 +38,7 @@ This web app generates funny pet names for all kinds of animals, making POST req
 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)
 
-Now we need to setup our backend servers for the app to work:
+## Now we need to setup our backend servers for the app to work:
 
 8. Node Server
 https://github.com/dannyl1u/node-server
