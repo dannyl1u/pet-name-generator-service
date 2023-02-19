@@ -36,14 +36,67 @@ This web app generates funny pet names for all kinds of animals, making POST req
    $ flask run
    ```
 
-You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! 
+You should now be able to access the app at [http://localhost:5000](http://localhost:5000)
 
 Now we need to setup our backend servers for the app to work:
 
-7. Run Node Server
+8. Node Server
 https://github.com/dannyl1u/node-server
 
-8. Run French translater Server
-https://github.com/dannyl1u/french-translator-server
+1. Clone the repo. 
 
-Generate your pet name!
+   ```bash
+   $ git clone https://github.com/dannyl1u/node-api.git
+   ```
+
+2. Navigate into the project directory
+
+   ```bash
+   $ cd node-api
+   ```
+
+3. run npm install
+
+   ```bash
+   $ npm install
+   ```
+
+4. Run the server
+
+   ```bash
+   $ node .
+   ```
+
+Server should now be up at [http://localhost:8080](http://localhost:8080)
+
+9. French translater Server
+https://github.com/dannyl1u/french-translator-server
+1. Ensure python is installed.
+
+   ```bash
+   $ python --version
+   ```
+2. Install flask
+
+   ```bash
+   $ pip install Flask
+   # we might need to replace pip with pip3
+   # this also requires that pip is installed
+   $ pip --version
+   ```
+
+3. Run the server
+
+   ```bash
+   $ python api.py
+   ```
+   
+4. Run the server
+
+   ```bash
+   $ python api.py
+   ```
+   
+Server should now be up at [http://localhost:8000](http://localhost:8000)
+
+10. All done. Generate your pet name!
