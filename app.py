@@ -13,20 +13,27 @@ def add_french_accents(word):
     """
     Adds random French accents to a word
     """
-    accents = ['é', 'è', 'ê', 'ë', 'à', 'â', 'î', 'ï', 'ô', 'ù', 'û']
+    # accents = ['é', 'è', 'ê', 'ë', 'à', 'â', 'î', 'ï', 'ô', 'ù', 'û']
+    vowels = ['a', 'e', 'i', 'o', 'u']
+
+    vowel_dict = {
+        "a": ['à', 'â'],
+        "e": ['é', 'è', 'ê', 'ë'],
+        "i": ['î', 'ï'],
+        "o": ['ô'],
+        "u": ['ù', 'û']
+    }
+
     accented_word = ''
     for letter in word:
-        accented_word += letter + random.choice(accents)
+        if letter in vowels:
+            letter = random.choice(vowel_dict[letter])
+            accented_word += letter
+        else:
+            accented_word += letter
+    if (accented_word[len(accented_word) - 1] == 'n'):
+        accented_word += 'é'
     return accented_word
-
-def add_french_verbs(word):
-    """
-    Adds random French verbs to a word
-    """
-    verbs = ['aller', 'avoir', 'être', 'faire', 'pouvoir', 'savoir', 'vouloir']
-    verb = random.choice(verbs)
-    verb_word = f'{verb} {word}'
-    return verb_word
 
 def translate_to_french(text):
     """
@@ -36,8 +43,6 @@ def translate_to_french(text):
     translated_words = []
     for word in words:
         accented_word = add_french_accents(word)
-        # verb_word = add_french_verbs(accented_word)
-        # translated_words.append(verb_word)
         translated_words.append(accented_word)
     translated_text = ' '.join(translated_words)
     return translated_text
@@ -52,19 +57,21 @@ def index():
             prompt=generate_prompt(animal),
             temperature=0.6,
         )
-        return redirect(url_for("index", result=translate_to_french(response.choices[0].text.split()[0])))
+        return redirect(url_for("index", result=translate_to_french(response.choices[0].text)))
 
     result = request.args.get("result")
+    # return result
     return render_template("index.html", result=result)
 
 
+
 def generate_prompt(animal):
-    return """Suggest three names for an animal that is a superhero.
+    return """Suggest one funny animal name that is also a pun.
 
 Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+Names: Clawdia
 Animal: Dog
-Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+Names: Chewbarka
 Animal: {}
 Names:""".format(
         animal.capitalize()
