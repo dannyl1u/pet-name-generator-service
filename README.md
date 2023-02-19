@@ -37,3 +37,9 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    ```
 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+
+7. Run Node Server
+https://github.com/dannyl1u/node-server
+
+8. Run French translater Server
+https://github.com/dannyl1u/french-translater-server
