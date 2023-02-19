@@ -1,6 +1,8 @@
 # Mountain Madness Hackathon 2023 - Rubey on Tails
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+This web app generates funny pet names for all kinds of animals, using the OpenAI API through Natural Language Processing. It makes additional GET requests to another API (node-server), which makes GET requests to another API (french-translator-server) which takes in the AI generated pet name and translates it to a newly invented language, known as French++.
+
+p used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
 
 ## Setup
 
@@ -44,6 +46,6 @@ Now we need to setup our backend servers for the app to work:
 https://github.com/dannyl1u/node-server
 
 8. Run French translater Server
-https://github.com/dannyl1u/french-translater-server
+https://github.com/dannyl1u/french-translator-server
 
 Generate your pet name!
