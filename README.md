@@ -3,9 +3,11 @@
 
 This web app generates funny pet names for all kinds of animals, making POST requests to the OpenAI API that generates a pet name using Natural Language Processing. It makes additional GET requests to another API (node-server), which makes GET requests to another API (french-translator-server) which takes in the AI generated pet name and translates it to a newly invented language, known as French++. 
 
+<img width="1461" alt="image" src="https://user-images.githubusercontent.com/45186464/219979972-59ef1fd2-7368-43fc-a0c3-92de37b8a5e0.png">
+
 Rubey - a complicated solution to a simple problem. 
 
-<img width="1461" alt="image" src="https://user-images.githubusercontent.com/45186464/219979972-59ef1fd2-7368-43fc-a0c3-92de37b8a5e0.png">
+![image](https://user-images.githubusercontent.com/45186464/219985536-2795d20d-ee00-40c7-bca1-56ce1b8c83e1.png)
 
 
 ## Setup user app
