@@ -7,7 +7,9 @@ This web app generates funny pet names for all kinds of animals, making POST req
 
 Rubey - a complicated solution to a simple problem. 
 
-![image](https://user-images.githubusercontent.com/45186464/219985536-2795d20d-ee00-40c7-bca1-56ce1b8c83e1.png)
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/45186464/219985536-2795d20d-ee00-40c7-bca1-56ce1b8c83e1.png">
+
+<!-- ![image](https://user-images.githubusercontent.com/45186464/219985536-2795d20d-ee00-40c7-bca1-56ce1b8c83e1.png) -->
 
 
 ## Setup user app
