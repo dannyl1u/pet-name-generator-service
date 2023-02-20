@@ -35,15 +35,15 @@ Rubey - a complicated solution to a simple problem.
    ```bash
    $ cp .env.example .env
    ```
-   
-   5. Create a new virtual environment
+
+5. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
+
+6. Create a new virtual environment
 
    ```bash
    $ python -m venv venv
    $ . venv/bin/activate
    ```
-
-6. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
 
 7. Run the app
 
