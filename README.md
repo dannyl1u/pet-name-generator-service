@@ -22,23 +22,25 @@ Rubey - a complicated solution to a simple problem.
    $ cd pet-name-generator-service
    ```
 
-3. Create a new virtual environment
 
-   ```bash
-   $ python -m venv venv
-   $ . venv/bin/activate
-   ```
 
-4. Install the requirements
+3. Install the requirements
 
    ```bash
    $ pip install -r requirements.txt
    ```
 
-5. Make a copy of the example environment variables file
+4. Make a copy of the example environment variables file
 
    ```bash
    $ cp .env.example .env
+   ```
+   
+   5. Create a new virtual environment
+
+   ```bash
+   $ python -m venv venv
+   $ . venv/bin/activate
    ```
 
 6. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
